@@ -1,0 +1,27 @@
+.container-fluid.jumbotrom {
+  background: #e9ecef;
+  padding: 5px;
+}
+
+.container-fluid.jumbotrom h1 {
+  font-weight: 300;
+  font-size: 72px;
+  line-height: 84px;
+  margin-top: 64px;
+  margin-left: 49px;
+}
+
+.container-fluid.jumbotrom p {
+  font-size: 16px;
+  line-height: 19px;
+  width: 70%;
+  margin-left: 55px;
+  margin-bottom: 16px;
+}
+
+.container-fluid.jumbotrom .btn {
+  font-size: 20px;
+  line-height: 23px;
+  margin-left: 55px;
+  margin-bottom: 64px;
+}
