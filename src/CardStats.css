@@ -1,19 +1,19 @@
 .card.stats {
   margin-top: 32px;
-  margin-left: 55px;
+  margin-left: 50px;
   margin-bottom: 32px;
   margin-right: 30px;
   font-size: 16px;
   line-height: 19px;
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 768px) {
   .card.stats {
     margin-left: 0px;
   }
 }
 
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 767px) {
     .card.stats {
       margin-left: 55px;
     }

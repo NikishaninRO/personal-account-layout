@@ -10,7 +10,7 @@ export default function App() {
     <>
       <Navbar />
       <Jumbotrom />
-      <div className="row">
+      <div className="row" style ={{width: "100%"}}>
         <CardProfile />
         <CardStats />
       </div>

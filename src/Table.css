@@ -1,5 +1,5 @@
 .row {
-    overflow-x: auto;
+  overflow-x: auto;
 }
 
 .table td {
@@ -8,5 +8,5 @@
 }
 
 .table td.date {
-    color:#000000;;
+  color: #000000;
 }

@@ -1,7 +1,7 @@
 .navbar {
     background: #343A40;
-    padding: 20px !important;
-    justify-content: flex-start !important;
+    padding: 20px;
+    justify-content: flex-start;
 }
 
 .nav-item {
