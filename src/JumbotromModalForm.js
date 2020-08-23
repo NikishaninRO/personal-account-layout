@@ -1,8 +1,9 @@
+/* eslint-disable react/prop-types */
 import React from "react";
 
-export default function JumbotromModalForm() {
+export default function JumbotromModalForm(props) {
   return (
-    <form>
+    <form onSubmit={props.onSubmit}>
       <div className="form-group">
         <label className="form-label">Название работы:</label>
         <input
@@ -22,7 +23,7 @@ export default function JumbotromModalForm() {
         ></input>
       </div>
       <button type="submit" className="btn btn-primary">
-        Подтвердить изменеия
+        Добавить
       </button>
     </form>
   );

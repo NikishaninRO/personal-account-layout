@@ -1,7 +1,8 @@
+/* eslint-disable react/prop-types */
 import React from "react";
 import JumbotromModalForm from "./JumbotromModalForm";
 
-export default function JumbotromModal() {
+export default function JumbotromModal(props) {
   return (
     <div
       className="modal fade"
@@ -28,7 +29,7 @@ export default function JumbotromModal() {
             </button>
           </div>
           <div className="modal-body">
-            <JumbotromModalForm />
+            <JumbotromModalForm onSubmit={props.handleSubmit}/>
           </div>
         </div>
       </div>

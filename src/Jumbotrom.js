@@ -1,10 +1,11 @@
+/* eslint-disable react/prop-types */
 import React from "react";
 import "./Jumbortom.css";
 import JumbortomModal from "./JumbotromModal";
 
-export default function Jumbotrom() {
+export default function Jumbotrom(props) {
   return (
-    <div className="container-fluid jumbotrom">
+    <div className="container-fluid jumbotrom" id="jumbotrom">
       <h1>Портфолио</h1>
       <p>
         Это место, где собраны ваши научные публикации. Здесь вы можете
@@ -19,7 +20,7 @@ export default function Jumbotrom() {
       >
         Добавить работу
       </button>
-      <JumbortomModal />
+      <JumbortomModal handleSubmit={props.handleSubmit}/>
     </div>
   );
 }
