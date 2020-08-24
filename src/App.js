@@ -4,6 +4,7 @@ import Jumbotrom from "./Jumbotrom";
 import CardProfile from "./CardProfile";
 import CardStats from "./CardStats";
 import Table from "./Table";
+import Footer from "./Footer";
 import $ from "jquery";
 import { profileInfo, worksInfo } from "./accountDate";
 
@@ -112,6 +113,7 @@ export default function App() {
           </div>
         </div>
       )}
+      <Footer/>
     </>
   );
 }
