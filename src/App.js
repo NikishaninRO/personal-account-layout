@@ -4,6 +4,7 @@ import Jumbotrom from "./Jumbotrom";
 import CardProfile from "./CardProfile";
 import CardStats from "./CardStats";
 import Table from "./Table";
+import Footer from "./Footer";
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
         <CardStats />
       </div>
       <Table />
+      <Footer/>
     </>
   );
 }
