@@ -19,7 +19,7 @@
   margin-bottom: 16px;
 }
 
-.container-fluid.jumbotrom .btn {
+.container-fluid.jumbotrom .btn.jumbotrom {
   font-size: 20px;
   line-height: 23px;
   margin-left: 55px;

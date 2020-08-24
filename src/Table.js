@@ -1,7 +1,9 @@
+/* eslint-disable react/prop-types */
 import React from "react";
 import "./Table.css";
 
-export default function Table() {
+export default function Table(props) {
+  const worksArray = Array.from(props.worksInfo);
   return (
     <div className="container">
       <div className="row">
@@ -16,18 +18,25 @@ export default function Table() {
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>Привлечение инвестиций как фактор развития экономики</td>
-                <td className="date">21.05.2019</td>
-                <td>Асаншоева А.М.</td>
-                <td>89%</td>
-              </tr>
-              <tr>
-                <td>The role of accounting in sustainable development</td>
-                <td className="date">11.02.2019</td>
-                <td>Шаляпина В.С.</td>
-                <td>78%</td>
-              </tr>
+              {worksArray.map((work) => (
+                <tr key={work[0]}>
+                  <td>{work[0]}</td>
+                  <td data-date>{work[1].downloadDate}</td>
+                  <td>{work[1].scientificАdviser}</td>
+                  <td>{work[1].uniqueness}</td>
+                  <td data-close>
+                    <button
+                      type="button"
+                      className="close"
+                      data-work={work[0]}
+                      onClick={props.onClick}
+                      title={"удалить работу"}
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </td>
+                </tr>
+              ))}
             </tbody>
           </table>
         </div>

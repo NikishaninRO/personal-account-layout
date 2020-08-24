@@ -7,6 +7,15 @@
   color: #007bff;
 }
 
-.table td.date {
+.table td[data-date] {
   color: #000000;
+}
+
+.table td[data-close] {
+  display: flex;
+  justify-content: center;
+}
+
+.table button.close {
+  color: red;
 }
