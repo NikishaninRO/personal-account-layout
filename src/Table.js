@@ -25,7 +25,13 @@ export default function Table(props) {
                   <td>{work[1].scientificАdviser}</td>
                   <td>{work[1].uniqueness}</td>
                   <td data-close>
-                    <button type="button" className="close" data-work={work[0]} onClick={props.onClick}>
+                    <button
+                      type="button"
+                      className="close"
+                      data-work={work[0]}
+                      onClick={props.onClick}
+                      title={"удалить работу"}
+                    >
                       <span aria-hidden="true">&times;</span>
                     </button>
                   </td>

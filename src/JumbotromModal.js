@@ -13,7 +13,7 @@ export default function JumbotromModal(props) {
       aria-labelledby="jumbotromModalLabel"
       aria-hidden="true"
     >
-      <div className="modal-dialog">
+      <div className="modal-dialog modal-lg">
         <div className="modal-content">
           <div className="modal-header">
             <h5 className="modal-title" id="jumbotromModalLabel">
